@@ -1,5 +1,9 @@
 **Objectives**
 The objectives of this assignment are for you to practice: (1) the use of C++ I/O streams, including error handling, (2) dynamic allocation and de-allocation of one-dimensional arrays, (3) solve a problem using object-oriented programming. You will do so through the design of a program that parses circuit building commands from the standard input, displaying appropriate error messages if necessary, and by creating and maintaining resistors in a circuit. You will be asked to calculate the voltage at certain nodes. 
+
 **Problem Statement**
 Your task is to implement a program for storing resistors in a circuit. The circuit, or network, is defined by a number of nodes, each node being connected to one or more resistors. Each resistor has certain values associated with it, including: resistance value, text name, and the IDs of the two nodes (endpoints) it connects. The diagram below (Fig 1) illustrates an example. Here R1 connects nodes 1 and 2, R2 does the same, and R3 connects nodes 1 and 3. The nodes could be strips on a breadboard for example, with resistors plugged in to some nodes.
 The program you will write is similar to the "input-and-store-the-network" portion of real programs used to simulate electric circuits, and programs that control the robots that automatically insert resistors connecting the appropriate points (nodes) on circuit boards.
+
+Circuits are input using a text-based user interface. Commands are defined to allow the user to insert, modify, delete and print resistors, and to set the maximum size of the network. Based on the commands given, you will need to maintain two arrays, one of Resistors and one of Nodes, to which you can add and modify elements.
+
